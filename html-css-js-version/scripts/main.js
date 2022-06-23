@@ -74,12 +74,12 @@ function fetchWeatherData() {
       const d = parseInt(date.substr(8, 2));
       const time = date.substr(11);
 
-      dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}/${m}/${y}`;
+      dateOutput.innerHTML = `${dayOfTheWeek(d, m, y)} ${d}, ${m} ${y}`;
       timeOutput.innerHTML = time;
 
       /* Add the name of the city into the page */
       nameOutput.innerHTML = data.location.name;
-      const iconId = data.current.condition.icon.substr("http://cdn.weatherapi.com/weather/64x64/".length);
+      const iconId = data.current.condition.icon.substr("cdn.weatherapi.com/weather/64x64/".length);
       icon.src = "./assets/icons" + iconId;
 
       // add the weather details to the page
