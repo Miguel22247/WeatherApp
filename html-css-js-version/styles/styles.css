@@ -94,7 +94,7 @@ h1, h3 {
   margin-bottom: 3em;
 }
 
-.search-btn {
+.submit{
   position: absolute;
   top: 0;
   right: 0;
@@ -109,7 +109,7 @@ h1, h3 {
   transition: 0.4s;
 }
 
-.search-btn:hover {
+.submit:hover {
   background: #fff;
   color: #000;
 }
